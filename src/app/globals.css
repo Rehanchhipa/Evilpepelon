@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*::selection {
+    background-color: red;
+    color: white;
+}
+
+.bg-Image {
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.5);
+}
+.bg-Image-blue {
+  background-color: rgb(3,66,122);
+  background-color: rgba(3,66,122, 0.7);
+}
+.bg-Image-1 {
+  background-image: url('./images//homeHide.webp');
+}
+.bg-Image-2 {
+  background-image: url('./images//bg-2.jpg');
+}
+.img {
+  background-image: url('images/bg-2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.bgblue {
+
+  background-image: url("./images/bg-2.jpg");  
+}
+.bg2new {
+  /* background-attachment: fixed; */
+  /* background-position: center;  */
+  /* background-size: cover; */
+  background-image: url('./images/bgimg-2.jpg');
+}
+
+.logo {
+  font-size: 20px;
+}
+
+.nav {
+  font-size: 15px;
+}
+
+.nav-hover:hover .nav-hover {
+  color: white !important;
+}
+
+
+/* this is side bar */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  /* transition: 0.5s; */
+  /* padding-top: 60px; */
+}
+
+/* this is about */
+
+.about-img {
+  background-image: url('./images/homeHide.webp');
+}
+
+@media only screen and (min-width: 768px ) {
+  
+  .minWidth {
+    height: 300px;
+  }
+  .stack {
+    min-width: 450px;
+  }
+}
+
+@media only screen and (min-width: 1230px ) {
+  
+  .minWidth {
+    height: 250px;
+  }
+
+  .buy-width {
+    width: 70% !important;
+  }
+}
